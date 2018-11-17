@@ -1,0 +1,76 @@
+.layout{
+    width: 920px;
+    margin: 0 auto
+}
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+.name,.price{
+    color: red;
+    font-size: 12px
+}
+
+.price::before {
+    content: '￥';
+}
+
+li{
+    list-style: none;
+    float: left;
+    width: 300px;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+
+ul {
+    margin-left: -10px;
+}
+
+ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.add,.change {
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+    border:1px solid red;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.change{
+    margin-left: 20px
+}
+
+.mode{
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: 3
+}
+
+ .remove{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+border:3px solid red;
+padding: 20px;
+font-size:20px;
+color: white;
+cursor: pointer;
+} 
+
+.none{
+    display: none;
+}
